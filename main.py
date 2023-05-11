@@ -20,7 +20,6 @@ def get_products(url):
 # telegram bot funnction to send notifications
 def send_telegram_message(message: str, chat_id,  api_key: str):
     url = f"https://api.telegram.org/bot{api_key}/sendMessage?chat_id={chat_id}&text={message}"
-
     # Create json link with message
     data = {
         'chat_id': chat_id,
@@ -29,10 +28,9 @@ def send_telegram_message(message: str, chat_id,  api_key: str):
          }
     # POST the message
     requests.post(url, data)
-    
-    
-BOT_TOKEN = "5826906102:AAGz3-doxqahf_Wqgp_S4OSJ9K3uqkVXEE4"
-CHAT_ID = 5169518202
+       
+BOT_TOKEN = "your bot token"
+CHAT_ID = "your chat/group/channel id"
 # telegram bot funnction to send notifications
 def main():
     url = "https://www.jumia.co.ke/flash-sales/"
