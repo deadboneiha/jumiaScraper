@@ -30,10 +30,7 @@ def send_telegram_message(message: str, chat_id,  api_key: str):
     # POST the message
     requests.post(url, data)
     
-
-
-
-
+    
 BOT_TOKEN = "5826906102:AAGz3-doxqahf_Wqgp_S4OSJ9K3uqkVXEE4"
 CHAT_ID = 5169518202
 # telegram bot funnction to send notifications
