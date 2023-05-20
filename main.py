@@ -27,6 +27,7 @@ def send_telegram_message(message: str, chat_id,  api_key: str):
         'parse_mode': 'HTML',
          }
     # POST the message
+    # Javascript Object 
     requests.post(url, data)
        
 BOT_TOKEN = "your bot token"
